@@ -3,9 +3,10 @@
     if()
 }*/  //also a great guess and you were almost there. Here is a better way to do it
 
-function validatePhone() {
+function val() {
     //let phn = document.forms['valphone']['num'].value;
-    let phn = parseInt(document.forms[valphone]['num'].value);
+    let phn = document.forms['phoneNum']['number'].value;
+    console.log(phn);
     var text;
     let length = pnh.length;
     // a new varaible = document from the HTML form. first value is the form name, second value is the input name. and .value of course, gets the value
