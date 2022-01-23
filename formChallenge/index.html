@@ -2,14 +2,14 @@
 <html>
     <head>
         <meta charset='UTF-8'>
-        <script src='JS/main.js' defer></script>
+        <script src='JS/main.js'></script>
     </head>
 
     <body>
 
-        <form name='phoneNum'>
-            <input name='number' type='text' placeholder='Phone Number'>
-            <button onclick='val()'>Submit</button>
+        <form name='phoneNum' id='phoneNum' onsubmit="return val()">
+            <input name='number' id='number' type='text' placeholder='Phone Number'/>
+            <input type='submit' id='submit' value="Submit"/>
         </form>
 
     <p id="result"></p>

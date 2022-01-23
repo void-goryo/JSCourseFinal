@@ -5,8 +5,9 @@
 
 function val() {
     //let phn = document.forms['valphone']['num'].value;
-    let phn = document.forms['phoneNum']['number'].value;
-    console.log(phn);
+    let form = document.forms['phoneNum'].value;
+    let phn = form['number'];
+    console.log(phn)
     var text;
     let length = pnh.length;
     // a new varaible = document from the HTML form. first value is the form name, second value is the input name. and .value of course, gets the value
