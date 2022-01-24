@@ -24,3 +24,11 @@ function val() {
     }
 
 }
+
+function openForm() {
+    document.getElementById('phoneNum').style.display = 'block';
+}
+
+function closeForm() {
+    document.getElementById('phoneNum').style.display = 'none';
+}

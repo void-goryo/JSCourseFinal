@@ -4,14 +4,75 @@
     box-sizing: border-box;
 }
 
-/*Button used to open the contact form - fixed at the bottom of the page*/
+/*Button used to open the contact form*/
 .openButton {
     background-color: cyan;
     color: white;
     padding: 16px 20px;
     border: none;
     cursor: pointer;
-    opacity: 0.9;
+    opacity: 0.7;
     position: relative;
-    width: 280px;
+    width: 200px;
+    border-radius: 5px;
+    animation: intro 1s;
+    transition: .2s ease-in;
+}
+/*Popup menu*/
+.formPopup {
+    width: 50vw;
+    border: 2px solid #000;
+    opacity: .9;
+    z-index: 9;
+}
+
+/*Form container*/
+.formContainer {
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    border: none;
+    background: #000;
+    opacity: .5;
+}
+
+.formContainer input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/*buttons*/
+
+.submit {
+    background-color: rgb(0, 255, 0);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    margin: 10px 100% 10px 0;
+    opacity: .8;
+    transition: .2s ease-in;
+}
+
+.formContainer .close{
+    background-color: red;
+}
+
+.formContainer .submit:hover, .openButton:hover, .close:hover{
+    opacity: 1;
+}
+
+@keyframes intro {
+    from {top: -200px}
+    to {top: 0}
+
+}
+
+@keyframes zoom {
+    0% {scale: 1, 1}
+    50% {scale: 1.5, 1.5}
 }
