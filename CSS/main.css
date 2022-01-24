@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Button used to open the contact form - fixed at the bottom of the page*/
+.open-button{
+    background-color: cyan;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.6;
+    position: absolute;
+    width: 280px[]
+}

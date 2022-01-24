@@ -3,25 +3,24 @@
     if()
 }*/  //also a great guess and you were almost there. Here is a better way to do it
 
+
 function val() {
-    //let phn = document.forms['valphone']['num'].value;
-    let form = document.forms['phoneNum'].value;
-    let phn = form['number'];
-    console.log(phn)
-    var text;
-    let length = pnh.length;
-    // a new varaible = document from the HTML form. first value is the form name, second value is the input name. and .value of course, gets the value
-    if (isNaN(phn)){
-        //if phn is Not a Number (NaN), and the length is equal to 10
-        text = 'Please enter a 10 digit phone number';
+    //grabs the value of the phone number
+    let phoneNumber = document.forms['phoneNum']['number'].value;
+    //if the phone number is not a number
+    if (isNaN(phoneNumber)){
+        alert('Please enter in a 10 digit phone number');
     }
-    else if (length != 10){
-        text = 'Please enter a 10 digit phone number'
+    
+    //if the phone number is a number and is not 10 digits
+    else if (isNaN(phoneNumber) == false && phoneNumber.length != 10){
+        alert('Please enter a 10 digit phone number');
+        return false;
     }
+
+    //if everything is correct
     else {
-        text = 'Submited!';
+        alert('Submitted')
     }
-    console.log(phn);
-    console.log(legnth);
-    document.getElementById('result').innerHTML = validatePhone();
+
 }
