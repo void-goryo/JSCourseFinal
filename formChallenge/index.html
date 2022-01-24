@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
     <head>
-        <meta charset='UTF-8'>
+        <meta charset='utf-8'>
         <script src='JS/main.js'></script>
+        <link rel='stylesheet' type='text/css' href='CSS/main.css' media="1">
     </head>
 
     <body>
+        <button class='openButton' onclick='openForm()'>Open</button>
+        <div class='formPopup'  id='phoneNum'>
+            <form name='phoneNum' class='formContainer'>
+                <h3>Phone Number</h3>
+                <input name='number' id='number' type='text' placeholder='Phone Number'/>
+                <button type='submit' onclick='val()' class='submit'>Submit</button>
+                <button type='button' class='cancel' onclick='closeForm()'>Close</button>
+            </form>
 
-        <form name='phoneNum' id='phoneNum'>
-            <input name='number' id='number' type='text' placeholder='Phone Number'/>
-            <button onclick='val()'>Submit</button>
-        </form>
-
-    <p id="result"></p>
+    <p id='result'></p>
 
     </body>
 </html> 
