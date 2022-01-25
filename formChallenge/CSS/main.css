@@ -1,7 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    display: block;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /*Button used to open the contact form*/
@@ -52,7 +57,7 @@
     padding: 16px 20px;
     border: none;
     cursor: pointer;
-    width: 25%;
+    width: 40%;
     margin: 10px 100% 10px 0;
     opacity: .8;
     transition: .2s ease-in;
@@ -66,9 +71,31 @@
     opacity: 1;
 }
 
-.formContainer:focus {
-    animation: zoom 2s forwards
+/*Image*/
+
+.formContainer .pic {
+    height: 50px;
+    width: 50px;
+    border: none;
+    display: block;
 }
+
+.formContainer .pic {
+    animation: zoom .7s forwards
+}
+
+/*scroll buttons*/
+
+.top, .bottom {
+    width: 100px;
+}
+
+.bottom {
+    margin: 1000px auto;
+    top: 1080px;
+}
+
+/*Animations*/
 
 @keyframes intro {
     from {top: -200px}
@@ -77,7 +104,7 @@
 }
 
 @keyframes zoom {
-    0% {scale: 1, 1}
-    50% {scale: 1.5, 1.5}
-    100% {scale: 1, 1}
+    0% {transform: scale(1, 1)}
+    50% {transform: scale(1.5, 1.5)}
+    100% {transform: scale(1, 1)}
 }
