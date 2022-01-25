@@ -3,7 +3,7 @@
     if()
 }*/  //also a great guess and you were almost there. Here is a better way to do it
 
-//Jquary
+//Jquery
 var script = document.createElement('script');
 script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js';
 script.type = 'text/javascript';
@@ -39,3 +39,18 @@ function openForm() {
 function closeForm() {
     document.getElementById('phoneNum').style.display = 'none';
 }
+
+
+//typed this out through example. need to study later
+//https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/
+
+$('#slideshow > div:gt(0)').hide();
+
+setInterval(function() {
+    $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+}, 3000);
