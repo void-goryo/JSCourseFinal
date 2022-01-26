@@ -3,7 +3,7 @@
     <head>
         <meta charset='utf-8'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
         <script src='JS/main.js'></script>
         <link rel='stylesheet' type='text/css' href='./CSS/main.css'>
     </head>
@@ -11,6 +11,16 @@
     <body>
 
         <!--Slideshow. need to study. https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/-->
+        <div id='slideshow'>
+            <div>
+                <img src='http://farm6.static.flickr.com/5224/5658667829_2bb7d42a9c_m.jpg'>
+            </div>
+        </div>
+
+        <div>
+            <img src='http://farm6.static.flickr.com/5230/5638093881_a791e4f819_m.jpg'>
+        </div>
+
         </div>
         <button class='openButton' onclick='openForm()'>Open</button>
         <div class='formPopup'  id='phoneNum' style='display: none;'>
@@ -33,23 +43,34 @@
         <a class='bottom' href='#top' id='bottom'> Click to go to the top</a>
         </div>
 
+<<<<<<< HEAD
+=======
         <div id='slideshow'>
             <div>
                 <img src='http://farm6.static.flickr.com/5224/5658667829_2bb7d42a9c_m.jpg'>
             </div>
 
             <div>
-                <img src='http://farm6.static.flickr.com/5230/5638093881_a791e4f819_m.jpg'>
             </div>
         </div>
 
         <!--Contact-->
         <div class='contact'>
-            <button class='openC'>Contact</button>
+            <div class='cCont' id='close'>
+                <button class='closeC' onclick='cWin()'>X</button>
+                <form name='con'>
+                    <input name='firstN' placeholder='First Name'/>
+                    <input name='lastN' placeholder='Last Name'/>
+                    <input name='EM' placeholder='Email'/>
+                    <input name='msg' placeholder='Message'/>
+                </form>
+            </div>
+            <button class='openC' onclick="oWin()">Contact</button>
 
         </div>
 
 
 
+>>>>>>> 800a1afbc6ac03e45dfb944f4f9e59cd2712877c
     </body>
 </html> 
