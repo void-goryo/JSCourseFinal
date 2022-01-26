@@ -40,14 +40,12 @@ function closeForm() {
     document.getElementById('phoneNum').style.display = 'none';
 }
 
-
-//typed this out through example. need to study later
+    //typed this out through example. need to study later
 //https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/
-
-$('#slideshow > div:gt(0)').hide();
+$("#slideshow > div:gt(0)").hide();
 
 setInterval(function() {
-    $('#slideshow > div:first')
+  $('#slideshow > div:first')
     .fadeOut(1000)
     .next()
     .fadeIn(1000)
