@@ -44,29 +44,28 @@
         </div>
 
         <!--Contact-->
-        <div class='contact'>
-            <form class='Fcontact' name='cform' id='contact'>
-                <button class='closeC' onclick='close()'>X</button>
-                <label>First Name:</label>
-                <input name='fn' id='fn' type='text' placeholder='First Name'>
-                <br>
-                <label>First Name:</label>
-                <input name='fn' id='fn' type='text' placeholder='First Name'>
-                <br>
-                <label>First Name:</label>
-                <input name='fn' id='fn' type='text' placeholder='First Name'>
-                <br>
-                <label>First Name:</label>
-                <input name='fn' id='fn' type='text' placeholder='First Name'>
-                <button class='submit' type='Submit' onclick='submit()'>Submit</button>
-            </form>
-
-
-            <button class='openC' onclick='open()'>Contact</button>
-
+            <div class='contact' id='contact'>
+                <form class='Fcontact' name='cform'>
+                    <button type='button' class='closeC' onclick='closeC()'>X</button>
+                    <label>First Name:</label>
+                    <input class='in' name='fn' id='fn' type='text' placeholder='First Name'>
+                    <br>
+                    <label>Last Name:</label>
+                    <input class='in' name='ln' id='ln' type='text' placeholder='Last Name'>
+                    <br>
+                    <label>Email:</label>
+                    <input class='in' name='email' id='email' type='text' placeholder='Email'>
+                    <br>
+                    <label>Message:</label>
+                    <input class='in' name='msg' id='msg' type='message' placeholder='Message'>
+                    <button type='button' class='submit' type='Submit' onclick='submit()'>Submit</button>
+                </form>
+            </div>
+            </div>
+            <div class='open'>
+                <button type='button' class='openC' onclick='openC()' id='open'>Contact</button>
+            </div>
         </div>
-
-
 
     </body>
 </html> 

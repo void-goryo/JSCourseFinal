@@ -129,11 +129,42 @@ html {
   }
 
 /*Contact*/
+
 .contact {
     position: sticky;
     bottom: 10px;
-    margin-left: 92.50%;
     padding: 10px, 5px, 10px, 5px;
+    z-index: 9;
+    border: 1px solid black;
+    height: 400px;
+    width: 200px;
+}
+
+#contact {
+    display: none;
+}
+
+.Fcontact{
+    width: 200px;
+    height: 200px;
+    
+}
+
+.closeC {
+    background-color: crimson;
+    width: 10px;
+    height: auto;
+    cursor: pointer;
+    border: none;
+    float: right;
+}
+
+.open {
+    position: sticky;
+    height: 100px;
+    width: 100px;
+    bottom: 0;
+    z-index: 9;
 }
 
 .openC {
@@ -143,5 +174,6 @@ html {
     border: none;
     border-radius: 90px;
     cursor: pointer;
-    right: 20px
+    bottom: 0;
+    right: 0; 
 }

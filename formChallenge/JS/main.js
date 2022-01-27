@@ -52,3 +52,14 @@ setInterval(function() {
     .end()
     .appendTo('#slideshow');
 }, 3000);
+
+//For contacts
+function openC() {
+    document.getElementById('contact').style.display = 'block';
+    document.getElementById('open').style.display = 'none';
+}
+
+function closeC() {
+    document.getElementById('contact').style.display = 'none';
+    document.getElementById('open').style.display = 'block';
+}
