@@ -63,3 +63,28 @@ function closeC() {
     document.getElementById('contact').style.display = 'none';
     document.getElementById('open').style.display = 'block';
 }
+
+//another varification function
+function subs() {
+    let fname = document.forms['cform']['fn'].value;
+    let lname = document.forms['cform']['ln'].value;
+    let email = document.forms['cform']['email'].value;
+    console.log(fname);
+    console.log(lname);
+    console.log(email);
+
+    if (fname === ''){
+        alert('Please enter your First name');
+    }
+    else if (lname == ''){
+        alert('Pleast enter your Last name');
+    }
+
+    else if (!email.includes('@')){
+        alert('Please enter a valid Email');
+    }
+
+    else {
+        alert('Submited');
+    }
+}

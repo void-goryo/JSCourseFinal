@@ -4,7 +4,7 @@
         <meta charset='utf-8'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-        <script src='JS/main.js'></script>
+        <script src='JS/main.js' defer></script>
         <link rel='stylesheet' type='text/css' href='./CSS/main.css'>
     </head>
 
@@ -27,6 +27,11 @@
 
         <div>
         <a class='top' href='#bottom' id='top'>Click to go to the bottom</a>
+        </div>
+
+        <div>
+            <hr>
+            <p>This is a horizontal rule</p>
         </div>
 
         <div>
@@ -58,8 +63,7 @@
                     <br>
                     <label>Message:</label>
                     <input class='in' name='msg' id='msg' type='message' placeholder='Message'>
-                    <button type='button' class='submit' type='Submit' onclick='submit()'>Submit</button>
-                    <p id='out'></p>
+                    <button type='button' class='submit' type='submit' onclick='subs()'>Submit</button>
                 </form>
             </div>
             </div>
